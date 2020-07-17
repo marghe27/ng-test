@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">NG Project Tracking Tool</a>
+    <div>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/dashboard']">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/project']">Progetti</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div>
+        <h1>Benvenuto in {{ title }}!</h1>
+        <!-- <ngptt-project-list></ngptt-project-list> -->
+        <router-outlet></router-outlet>
+    </div>
+</div>
